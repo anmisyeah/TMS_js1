@@ -65,4 +65,14 @@ let y = 58;
 let z = 42;
 let resultHw = x + y + z;
 
-console.log(resultHw)
+console.log(resultHw);
+
+
+
+// task 2 
+let secondInMinute = 60;
+let minuteInHour = 60;
+let hourInDay = 24;
+let dayInYear = 365;
+let myAgeInSeconds = 26 * dayInYear * hourInDay * minuteInHour * secondInMinute + 6 * hourInDay * minuteInHour * secondInMinute;
+console.log(myAgeInSeconds);
