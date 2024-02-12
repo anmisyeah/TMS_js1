@@ -76,3 +76,12 @@ let hourInDay = 24;
 let dayInYear = 365;
 let myAgeInSeconds = 26 * dayInYear * hourInDay * minuteInHour * secondInMinute + 6 * hourInDay * minuteInHour * secondInMinute;
 console.log(myAgeInSeconds);
+
+
+
+// task 3
+let count = 42;
+let userName = '42';
+
+console.log(String(count), Number(userName));
+console.log(count.toString(), +userName);
