@@ -85,3 +85,12 @@ let userName = '42';
 
 console.log(String(count), Number(userName));
 console.log(count.toString(), +userName);
+
+
+
+// task 4
+let e = 1;
+let r = 2;
+let t = 'белых медведей';
+
+console.log(e.toString() + r.toString() + ' ' + t);
