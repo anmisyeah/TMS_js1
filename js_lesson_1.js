@@ -38,3 +38,10 @@ String(undefined); // 'undefined'
 +null;  // 0
 Boolean(undefined);  // false
 Number(undefined);   // NaN
+
+
+
+// Задание 4
+let a = prompt('Введите имя', );
+let b = prompt('Введте фамлю', );
+let result = alert(a +' ' + b);
