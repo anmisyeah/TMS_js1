@@ -94,3 +94,15 @@ let r = 2;
 let t = 'белых медведей';
 
 console.log(e.toString() + r.toString() + ' ' + t);
+
+
+
+// task 5
+let strFirst = 'доступ';
+let strSecond = 'морпех';
+let strThird = 'наледь';
+let strFours = 'попрек';
+let strFives = 'рубило';
+let lengthWords = strFirst.length + strSecond.length + strThird.length + strFours.length + strFives.length;
+
+console.log(lengthWords);
