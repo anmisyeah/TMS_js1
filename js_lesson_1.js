@@ -45,3 +45,13 @@ Number(undefined);   // NaN
 let a = prompt('Введите имя', );
 let b = prompt('Введте фамлю', );
 let result = alert(a +' ' + b);
+
+
+
+// Задание 5
+let pavelSalary = 1500;
+let olgaSalary = 1200;
+let markSalary = 2100;
+let totalSalary = pavelSalary + olgaSalary + markSalary;
+
+alert('Суммарная зарплата =' + ' ' + totalSalary);
