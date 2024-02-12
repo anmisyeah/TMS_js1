@@ -55,3 +55,14 @@ let markSalary = 2100;
 let totalSalary = pavelSalary + olgaSalary + markSalary;
 
 alert('Суммарная зарплата =' + ' ' + totalSalary);
+
+
+
+// HOMEWORK
+// task 1
+let x = 20;
+let y = 58;
+let z = 42;
+let resultHw = x + y + z;
+
+console.log(resultHw)
