@@ -125,3 +125,11 @@ let firstQuestion = prompt('Введите ваше имя');
 let secondQuestion = prompt('Введите ваш возраст');
 
 console.log('Имя:', firstQuestion, 'Возраст:', secondQuestion);
+
+
+
+// next level task
+let i = 4;
+let j = 3;
+[i, j] = [j, i];
+console.log(i, j)
