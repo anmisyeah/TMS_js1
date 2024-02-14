@@ -116,4 +116,12 @@ let bool = true;
 
 console.log('Variable: num have type', typeof(num));
 console.log('Variable: str have type', typeof(str));
-console.log('Variable: bool have type', typeof(true));
+console.log('Variable: bool have type', typeof(bool));
+
+
+
+// task 7
+let firstQuestion = prompt('Введите ваше имя');
+let secondQuestion = prompt('Введите ваш возраст');
+
+console.log('Имя:', firstQuestion, 'Возраст:', secondQuestion);
