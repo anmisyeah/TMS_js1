@@ -106,3 +106,14 @@ let strFives = 'рубило';
 let lengthWords = strFirst.length + strSecond.length + strThird.length + strFours.length + strFives.length;
 
 console.log(lengthWords);
+
+
+
+// task 6
+let num = 34;
+let str = 'str';
+let bool = true;
+
+console.log('Variable: num have type', typeof(num));
+console.log('Variable: str have type', typeof(str));
+console.log('Variable: bool have type', typeof(true));
