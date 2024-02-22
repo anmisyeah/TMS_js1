@@ -191,3 +191,40 @@ switch(questiLowerCase) {
     break;
     default: console.log('Неверные данные, попробуйте еще раз');
 }
+
+
+
+// дз продвинутый уровень
+// 1
+let userName = prompt('Введите свое имя');
+let userNameToLowerCase = userName.toLowerCase();
+let userNameSplit = userNameToLowerCase.split(' ');
+let firstLetters = userNameSplit.map(word => word[0].toUpperCase() + word.slice(1));
+let userNameJoin = firstLetters.join(' ');
+console.log(userNameJoin);
+
+
+
+// 2
+let userNum = Number(prompt('Введите число'));
+let howMinus = Number(prompt('Сколько отнять?'));
+let userNumMinus = userNum - howMinus;
+let howPlus = Number(prompt('Сколько добавить?'));
+let userNumPlus = userNumMinus + howPlus;
+let howMult = Number(prompt('На сколько умножить?'));
+let userNumMult = userNumPlus * howMult;
+let howDiv = Number(prompt('На сколько разделить?'));
+let userNumDiv = userNumMult / howDiv;
+alert('((((',userNum,'-',howMinus,') + ',howPlus,') *',howMult,') /',howDiv,'=', userNumDiv);
+
+
+
+// 3
+let steps = 6;
+for (let i = 1; i <= steps; i++) {
+    let row = '';
+    for (let j = 0; j < i; j++) {
+        row += '#';
+    }
+    console.log(row);
+}
