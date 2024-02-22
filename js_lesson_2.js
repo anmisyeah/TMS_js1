@@ -100,3 +100,94 @@ if (number !== null) {
 } else {
     alert("Отменено");
 } 
+
+
+
+// дз 1
+let variable1 = 'true';
+let variable2 = false;
+let variable3 = undefined;
+let variable4 = null;
+let variable1Type = typeof(variable1);
+let variable2Type = typeof(variable2);
+let variable3Type = typeof(variable3);
+let variable4Type = typeof(variable4);
+console.log(variable1Type, variable2Type, variable3Type, variable4Type);
+
+
+
+// дз 2
+let height = 15;
+let width = 20;
+if (height > width) {
+    console.log("Наибольшее число: " + height);
+} else {
+    console.log("Наибольшее число: " + width);
+}
+
+
+
+// дз 3
+for(let i = 0;i < 20; i++) {
+    if(i % 3 == 0) {
+        console.log(i);
+    }
+}
+
+
+
+// дз 4
+let key = true;
+let documents = true;
+let pen = true;
+let apple = false;
+let orange = true;
+let shouldGoToWork = (key && documents && pen) && (apple || orange);
+console.log(shouldGoToWork);
+
+
+
+// дз 5
+let fizBuzNum = Number(prompt('Введите число'));
+if(fizBuzNum % 3 ==0 && fizBuzNum % 5 ==0) {
+    console.log('FizBuz');
+}else if(fizBuzNum % 3 == 0) {
+    console.log('Buz');
+}else if(fizBuzNum % 5 == 0) {
+    console.log('Fiz');
+}else {
+    console.log('Число не делиться ни на 3 ни на 5');
+}
+
+
+
+// дз 6
+let age = prompt('Твой возраст?');
+if(age >= 16 && age <18) {
+    alert('Можешь выкурить сигаретку, только маме не говори')
+} else if(age < 18) {
+    alert('Пей колу');
+} else if(age >= 18) {
+    alert('Попей пивка');
+}
+
+
+
+// дз 7
+let north = 'север';
+let south = 'юг';
+let west = 'запад';
+let east = 'восток';
+let questi = prompt('Какую сторону света вы бы хотели посетить?');
+let questiLowerCase = questi.toLowerCase();
+switch(questiLowerCase) {
+        case 'север': alert('на север пойдешь много денег найдешь');
+    break;
+        case 'юг': alert('на юг пойдешь счастье найдешь');
+    break;
+        case 'запад': alert('на запад пойдешь верного друга найдешь');
+    break;
+        case 'восток': alert('на восток пойдешь разработчиком станешь');
+    break;
+    default: console.log('Неверные данные, попробуйте еще раз');
+}
