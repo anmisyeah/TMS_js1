@@ -148,3 +148,64 @@ function foo() {
 function boo() {
     console.log('boo')
 }
+
+
+
+// hw next level
+// 1
+function threeNum(a, b, c) {
+    if(a + b > c || a + c > b || b + c > a) {
+        return true
+    }else {
+        return false
+    }
+}
+
+
+
+// 2 
+function choko(n, m) {
+    if (n <= 0 || m <= 0) {
+        return 0;
+    }else {
+        return (n * m) -1;
+    }
+}
+
+
+
+// 3
+const TAX_RATE = 0.08;
+const PHONE_PRICE = 500;
+const ACCESSORY_PRICE = 50;
+let bankBalance = 1000;
+
+function calculateTax(amount) {
+    return amount * TAX_RATE;
+}
+
+function formatPrice(amount) {
+    return "$" + amount.toFixed(2);
+}
+
+function canAfford(amount) {
+    return bankBalance >= amount;
+}
+
+let totalAmount = 0;
+while (canAfford(totalAmount + PHONE_PRICE)) {
+    totalAmount += PHONE_PRICE;
+    if (canAfford(totalAmount + ACCESSORY_PRICE)) {
+        totalAmount += ACCESSORY_PRICE;
+    }
+}
+
+totalAmount += calculateTax(totalAmount);
+
+console.log("Total amount: " + formatPrice(totalAmount));
+
+if (canAfford(totalAmount)) {
+    console.log("You can afford it!");
+} else {
+    console.log("You cannot afford it.");
+}
