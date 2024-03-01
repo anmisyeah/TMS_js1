@@ -147,3 +147,59 @@ if (login === checkLogin && pass ===checkPass) {
 }else {
     console.log('Неверные данные!')
 }
+
+
+
+// Дз продвинутый уровень
+// 1
+function convertScore(score) {
+    const scores = score.split(':');
+    const team1 = parseInt(scores[0]);
+    const team2 = parseInt(scores[1]);
+
+    if (homeTeamScore > 9 || awayTeamScore > 9) {
+        console.log('Счет не может превышать 9 мячей для каждой команды.');
+        return;
+    }
+
+    const numbers = ['ноль', 'один', 'два', 'три', 'четыре', 'пять', 'шесть', 'семь', 'восемь', 'девять'];
+
+    console.log(`Счет ${numbers[homeTeamScore]}:${numbers[awayTeamScore]}`);
+}
+
+
+
+// 2
+let student1 = {
+    name: 'Polina',
+    age: 27,
+}
+
+    let student2 = {
+    name: 'Polina',
+    age: 27,
+}
+
+let isEqual = JSON.stringify(student1) === JSON.stringify(student2);
+console.log(isEqual);
+
+
+
+// 4
+const animals = {
+    cat: {
+        name: 'Енчик',
+        age: 3,
+    },
+    dog: {
+        name: 'Орео',
+        age: 2,
+    }
+};
+
+let birdName = animals.bird?.name;
+if (birdName) {
+    console.log('Имя птицы:', birdName);
+} else {
+    console.log('Птицы нет в объекте');
+}
