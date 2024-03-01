@@ -57,4 +57,93 @@ let developer2 = {
 }
 function getLocation (developer) {
     return `${developer.continent}, ${developer.country}`;
-}    
+}
+
+
+
+// Дз 1
+let myObject = {
+    key1: 'value1',
+    key2: 'value2'
+};
+
+console.log('Объект до удаления ключей:', myObject);
+
+delete myObject.key1;
+delete myObject.key2;
+
+console.log('Объект после удаления ключей:', myObject);
+
+
+
+// Дз 2
+let myObj = {
+    key1: 'value1',
+    key2: 'value2'
+}
+
+function checkKey(obj, key) {
+    return obj.hasOwnProperty(key);
+}
+
+
+
+// Дз 3
+const student = {
+    name: 'John',
+    age: 19,
+    isHappy: true
+}
+
+for (key in student) {
+    console.log(key, student[key])
+}
+
+
+
+// Дз 4
+const colors = {
+    'ru pum pu ru rum': {
+    red: 'красный',
+    green: 'зеленый',
+    blue: 'синий'
+    },
+}
+console.log(colors['ru pum pu ru rum'].red,colors['ru pum pu ru rum'].blue);
+
+
+
+// Дз 5
+let salaries = {
+    andrey: 500,
+    sveta: 413,
+    anton: 987,
+    igor: 664,
+    alexandra: 199
+}
+
+let sum = 0;
+
+for (key in salaries) {   
+    sum += salaries[key];
+}
+
+console.log(sum)
+
+
+
+// Дз 6
+let login = prompt('Введите логин:');
+let pass = prompt('Введите пароль:');
+let loginPass = {
+    login: login,
+    pass: pass,
+}
+let checkLogin = prompt('Подтвердите логин:');
+let checkPass = prompt('Подтвердите пароль:');
+
+if (login === checkLogin && pass ===checkPass) {
+    console.log('Добро пожаловать!');
+}else {
+    console.log('Неверные данные!')
+}
